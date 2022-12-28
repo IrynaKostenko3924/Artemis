@@ -1,0 +1,105 @@
+.gallery-container {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  @media screen and (max-width: 767px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+.gallery__header {
+  width: 183px;
+  height: 56px;
+  left: 629px;
+  top: 100px;
+  margin: 0 auto;
+  margin-bottom: 32px;
+  font-family: 'GFS Neohellenic';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 56px;
+  text-transform: uppercase;
+  color: $main-color;
+}
+
+.gallery-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 10px;
+  gap: 12px;
+  flex-wrap: wrap;
+
+  @media screen and (max-width: 767px) {
+    gap: 6px;
+  }
+}
+
+.grid {
+  display: flex;
+  max-width: 1300px;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 32px;
+  @media screen and (max-width: 767px) {
+    gap: 6px;
+    margin-bottom: 24px;
+  }
+}
+
+.mark-list {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 32px;
+}
+
+.product__title {
+  @include fontStyle(18px, 700, 0.06em, 2);
+  color: var(--header-color);
+  @include tranSition();
+}
+
+.product__description {
+  @include fontStyle(16px, null, 0.03em, 2);
+  color: var(--main-font-color);
+}
+
+.portfolio-section {
+  background-color: var(--main-white-color);
+  @include mintablet {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @include desktop {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.product {
+  display: block;
+  width: 100%;
+}
+
+.product__thumb {
+  position: relative;
+  overflow: hidden;
+}
+
+.product__link {
+  display: block;
+}
+
+.gallery {
+  background-color: #11467a;
+}
